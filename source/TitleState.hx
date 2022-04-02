@@ -471,7 +471,6 @@ class TitleState extends MusicBeatState
 				// credTextShit.visible = true;
 				case 3:
 					addMoreText('HexFalc', 45);
-					addMoreText('', 45);
 				// credTextShit.text += '\npresent...';
 				// credTextShit.addText();
 				case 4:
@@ -510,7 +509,7 @@ class TitleState extends MusicBeatState
 					addMoreText('Engine');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('(P.E.)'); // credTextShit.text += '\nFunkin';
+					addMoreText('(P.E)'); // credTextShit.text += '\nFunkin';
 
 				case 16:
 					skipIntro();
