@@ -1984,9 +1984,9 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingString == '?') {
-			scoreTxt.text = 'Your Score: ' + songScore + ' | Engine/Port By Hex Falc' ' | ComboBreaks: ' + songMisses + ' | Accuracy: ' + ratingString;
+			scoreTxt.text = 'Your Score: ' + songScore + ' | Engine/Port By Hex Falc' + ' | ComboBreaks: ' + songMisses + ' | Accuracy: ' + ratingString;
 		} else {
-			scoreTxt.text = 'Your Score: ' + songScore + ' | Engine/Port By Hex Falc' ' | ComboBreaks: ' + songMisses + ' | Accuracy: ' + ratingString + ' (' + Math.floor(ratingPercent * 100) + '%)';
+			scoreTxt.text = 'Your Score: ' + songScore + ' | Engine/Port By Hex Falc' + ' | ComboBreaks: ' + songMisses + ' | Accuracy: ' + ratingString + ' (' + Math.floor(ratingPercent * 100) + '%)';
 		}
 
 		if(cpuControlled) {
