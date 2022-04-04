@@ -757,7 +757,7 @@ class PlayState extends MusicBeatState
 
         screenshader.shader.uTime.value[0] = new flixel.math.FlxRandom().float(-100000, 100000);
 
-                #end
+      #end
 
 		var gfVersion:String = SONG.player3;
 		if(gfVersion == null || gfVersion.length < 1) {
