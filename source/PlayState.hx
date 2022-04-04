@@ -5,7 +5,7 @@ import Discord.DiscordClient;
 #end
 import Section.SwagSection;
 import Song.SwagSong;
-public static var screenshader:Shaders.PulseEffect = new PulseEffect();
+import Shaders.PulseEffect;
 import WiggleEffect.WiggleEffectType;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
@@ -138,6 +138,8 @@ class PlayState extends MusicBeatState
 	public var eventNotes:Array<Dynamic> = [];
 
 	private var strumLine:FlxSprite;
+	
+	public static var screenshader:Shaders.PulseEffect = new PulseEffect();
 
 	//Handles the new epic mega sexy cam code that i've done
 	private var camFollow:FlxPoint;
@@ -2133,6 +2135,8 @@ class PlayState extends MusicBeatState
 			trace("RESET = True");
 		}
 		doDeathCheck();
+		
+		
 
 		var roundedSpeed:Float = FlxMath.roundDecimal(songSpeed, 2);
 		if (unspawnNotes[0] != null)
