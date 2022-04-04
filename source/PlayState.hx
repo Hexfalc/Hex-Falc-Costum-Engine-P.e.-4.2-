@@ -708,6 +708,19 @@ class PlayState extends MusicBeatState
 		if(curStage == 'philly') insert(members.indexOf(blammedLightsBlack) + 1, phillyCityLightsEvent);
 		blammedLightsBlack = modchartSprites.get('blammedLightsBlack');
 		blammedLightsBlack.alpha = 0.0;
+		#end
+		
+		#if android
+
+                screenshader.waveAmplitude = 1;
+
+        screenshader.waveFrequency = 2;
+
+        screenshader.waveSpeed = 1;
+
+        screenshader.shader.uTime.value[0] = new flixel.math.FlxRandom().float(-100000, 100000);
+
+                #end
 
 		var gfVersion:String = SONG.player3;
 		if(gfVersion == null || gfVersion.length < 1) {
