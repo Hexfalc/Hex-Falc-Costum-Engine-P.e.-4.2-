@@ -748,10 +748,8 @@ class PlayState extends MusicBeatState
 		blammedLightsBlack = modchartSprites.get('blammedLightsBlack');
 		blammedLightsBlack.alpha = 0.0;
 	}
-		
-		#if android
 
-        screenshader.waveAmplitude} = 1;
+        screenshader.waveAmplitude = 1;
 
         screenshader.waveFrequency = 2;
 
