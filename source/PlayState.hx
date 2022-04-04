@@ -1869,8 +1869,6 @@ class PlayState extends MusicBeatState
                 }
 
         }
-
-        #end
 	  
 		/*if (FlxG.keys.justPressed.NINE)
 		{
