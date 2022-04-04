@@ -2169,6 +2169,20 @@ class PlayState extends MusicBeatState
 			trace("RESET = True");
 		}
 		doDeathCheck();
+		
+		#if android
+
+                if (curSong.toLowerCase() == 'yoursong')
+
+                        {
+
+                                screenshader.shader.uampmul.value[0] = 0;
+
+                                screenshader.Enabled = false;
+
+                        }
+
+                #end
 
 		var roundedSpeed:Float = FlxMath.roundDecimal(songSpeed, 2);
 		if (unspawnNotes[0] != null)
