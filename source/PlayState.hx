@@ -398,6 +398,45 @@ class PlayState extends MusicBeatState
 					stageCurtains.updateHitbox();
 					add(stageCurtains);
 				}
+				
+			case 'put your stage here':
+
+                        {
+
+                                defaultCamZoom = 0.85;
+
+                                curStage = 'put your stage here';
+
+                                var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('put your stage here'));
+
+                                bg.antialiasing = true;
+
+                                bg.scrollFactor.set(0.6, 0.6);
+
+                                bg.active = true;
+
+
+                                add(bg);
+
+                                #if android
+
+                                // below code assumes shaders are always enabled which is bad
+
+                                var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
+
+                                testshader.waveAmplitude = 0.1;
+
+                                testshader.waveFrequency = 5;
+
+                                testshader.waveSpeed = 2;
+
+                                bg.shader = testshader.shader;
+
+                                curbg = bg;
+
+                                #end
+
+                        }
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
