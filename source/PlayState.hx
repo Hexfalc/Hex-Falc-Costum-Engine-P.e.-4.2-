@@ -5,7 +5,6 @@ import Discord.DiscordClient;
 #end
 import Section.SwagSection;
 import Song.SwagSong;
-import Shaders.PulseEffect;
 import WiggleEffect.WiggleEffectType;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
@@ -138,10 +137,6 @@ class PlayState extends MusicBeatState
 	public var eventNotes:Array<Dynamic> = [];
 
 	private var strumLine:FlxSprite;
-	
-	public static var screenshader:Shaders.PulseEffect = new PulseEffect();
-	
-	public var curbg:FlxSprite;
 
 	//Handles the new epic mega sexy cam code that i've done
 	private var camFollow:FlxPoint;
@@ -1854,22 +1849,6 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-	  if (curbg != null)
-
-        {
-
-                if (curbg.active) // only the furiosity background is active
-
-                {
-
-                        var shad = cast(curbg.shader, Shaders.GlitchShader);
-
-                        shad.uTime.value[0] += elapsed;
-
-                }
-
-        }
-	  
 		/*if (FlxG.keys.justPressed.NINE)
 		{
 			iconP1.swapOldIcon();
@@ -2153,16 +2132,6 @@ class PlayState extends MusicBeatState
 			trace("RESET = True");
 		}
 		doDeathCheck();
-		
-		  if (curSong.toLowerCase() == 'yoursong')
-
-                        {
-
-                                screenshader.shader.uampmul.value[0] = 0;
-
-                                screenshader.Enabled = false;
-
-                        }
 
 		var roundedSpeed:Float = FlxMath.roundDecimal(songSpeed, 2);
 		if (unspawnNotes[0] != null)
