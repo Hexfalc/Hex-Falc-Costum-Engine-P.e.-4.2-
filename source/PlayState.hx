@@ -751,7 +751,7 @@ class PlayState extends MusicBeatState
 		
 		#if android
 
-                screenshader.waveAmplitude = 1}
+        screenshader.waveAmplitude = 1;
 
         screenshader.waveFrequency = 2;
 
