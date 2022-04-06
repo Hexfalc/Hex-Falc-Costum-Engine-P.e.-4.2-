@@ -24,9 +24,9 @@ class FlashingState extends MusicBeatState
 		add(bg);
 
 		warnText = new FlxText(0, 0, FlxG.width,
-			"Warning\n
-			This Is An Modified Version of Psych Engine\n
-			About Flash Lights\n
+			"Warning!\n
+			This Is An Modified Version of Psych Engine.\n
+			About Flash Lights:\n
 			Press A for diasable or B for ingnore.\n
 			You've been warned!",
 			32);
