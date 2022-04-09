@@ -16,17 +16,24 @@ class FlashingState extends MusicBeatState
 	public static var leftState:Bool = false;
 
 	var warnText:FlxText;
+	var BackgroundWarning:FlxSprite;
+	
 	override function create()
 	{
 		super.create();
 
-		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
-		add(bg);
+		//var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		//add(bg);
+		
+		BackgroundWarning = new FlxSprite().loadGraphic(Paths.image('bgwarning'));
+    BackgroundWarning.screenCenter();
+    BackgroundWarning.antialiasing = ClientPrefs.globalAntialiasing;
+    add(BackgroundWarning);
 
 		warnText = new FlxText(0, 0, FlxG.width,
-			"Warning!\n
-			This Is An Modified Version of Psych Engine.\n
-			About Flash Lights:\n
+			"Warning\n
+			This Is An Modified Version of Psych Engine\n
+			About Flash Lights\n
 			Press A for diasable or B for ingnore.\n
 			You've been warned!",
 			32);
