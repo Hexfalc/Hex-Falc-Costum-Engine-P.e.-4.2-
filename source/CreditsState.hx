@@ -48,8 +48,6 @@ class CreditsState extends MusicBeatState
 		var pisspoop = [ //Name - Icon name - Description - Link - BG Color
 			['Costum Engine or Mod Android Port'],
 			['HexFalc',		    'hexfalc',		    'Modified Psych Engine/Ported the Mod',	 'https://youtube.com/channel/UC6CIIVdSW0lseOysu408_EQ',	'0xFFFFBB1B'],
-			['Original Mod'],
-			['Vs Piracy Sonic Team',		    'bruh',		    'press a to go to the mod page',	 'https://gamebanana.com/mods/359041',	'0xFFC30085'],
 			['Psych Engine Android Port'],
 			['M.A. Jigsaw',		    'majigsaw',		    'Main Coder of The Port',	 'https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ',	'0xFFC30085'],
 			['Psych Engine Team'],
